@@ -1,11 +1,18 @@
 import logo from "./logo.svg";
+
 //import "./App.css";
 import mockData from "./mockdata";
 
-////// Own Component imports:
+
+////// React and react-router-dom imports:
+import { Switch, Route } from 'react-router-dom';
+
+////// Own component imports:
 import NavBar from "./Components/NavBar";
 import Hero from "./Components/Hero";
 import Footer from "./Components/Footer";
+import RecipeDetails from "./Components/RecipeDetails";
+
 
 ////// React-Bootstrap imports:
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -40,7 +47,16 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <Hero />
+      <Switch>
+        <Route path="/details/id">
+          <RecipeDetails />
+        </Route> 
+        <Route path="/">
+          <Hero />
+        </Route>      
+      </Switch>
+
+      <Footer />
     </div>
   );
 }
