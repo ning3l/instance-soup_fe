@@ -1,3 +1,21 @@
+/* Import  'Stylish', from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Stylish&display=swap');
+
+.btn {
+    min-width: 10rem;
+}
+
+
+.component-navbar-brand {
+    font-family: "Stylish", sans-serif;
+    font-size: 18px;
+}
+
 .container {
     max-width: 100vh;
+}
+
+a.nav-link {
+    display: flex;
+    justify-content: center;
 }

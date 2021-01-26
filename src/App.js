@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 
-//import "./App.css";
+import "./App.css";
 import mockData from "./mockdata";
 
 
@@ -11,7 +11,8 @@ import { Switch, Route } from 'react-router-dom';
 import NavBar from "./Components/NavBar";
 import Hero from "./Components/Hero";
 import Footer from "./Components/Footer";
-import RecipeDetails from "./Components/RecipeDetails";
+import RecipeDetails from './Components/RecipeDetails';
+import ControlledCarousel from './Components/ControlledCarousel';
 
 
 ////// React-Bootstrap imports:

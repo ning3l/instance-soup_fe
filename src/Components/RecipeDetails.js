@@ -5,8 +5,8 @@ import Card from "react-bootstrap/Card";
 
 const RecipeDetails = () => {
   return (
-    <Container class="fluid mt-5">
-      <Row className="justify-content-center">
+    <Container fluid className="mt-4 p-0 mr-0 ml-0">
+      <Row fluid className="justify-content-center">
         <Col xs={12} md={10} lg={8}>
           <Card>
             <Card.Header>Quote</Card.Header>
